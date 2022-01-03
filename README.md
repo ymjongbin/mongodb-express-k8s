@@ -5,6 +5,11 @@
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 
+# Design Architecture
+<img src="images/design-architecture.png"
+     alt="Markdown Monster icon"
+     style="float: left; margin-right: 10px;" />
+
 # ArgoCD Application
 <img src="images/argocd-application.png"
      alt="Markdown Monster icon"
