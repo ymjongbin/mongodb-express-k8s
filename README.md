@@ -24,6 +24,4 @@
 | Mongo DB Express        | [ Environnement Variable](https://github.com/mongo-express/mongo-express)        |
 
 <h3> Clean up resources  </h3>
-```
 $kubectl delete all --all --namespace=mongo
-```
