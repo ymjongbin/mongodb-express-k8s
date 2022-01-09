@@ -48,6 +48,7 @@
 
 <h3> How to clean up all of containers</h3>
 <ol>
-     <p>kubectl delete all --all --namespace=argocd</p>
+  <p>kubectl delete all --all --namespace=mongo</p>
+  <p>kubectl delete all --all --namespace=argocd</p>
 </ol>
 
