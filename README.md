@@ -25,5 +25,29 @@
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
 <p>.</p>
-<h3> Clean up resources  </h3>
-$kubectl delete all --all --namespace=mongo
+<h3>   </h3>
+<h3> How to run it in local </h3>
+<ol>
+  <li>RUN <b>Docker Desktop</b> for running <b>Docker</b> and <b>Kubenetues</b></li>
+  <li>kubectl create namespace argocd</li>
+  <li>kubectl apply -n argocd -f https://raw.githubusercontent.com/argoproj/argo-cd/stable/manifests/install.yaml</li>
+  <li>kubectl patch svc argocd-server -n argocd -p '{"spec": {"type": "LoadBalancer"}}'</li>
+  <p><b>Get ArgoCD admin password</b></p>
+  <li>kubectl -n argocd get secret argocd-initial-admin-secret -o jsonpath="{.data.password}" | base64 -d; echo</li>
+  <p><b>WAIT UNTIL all pods running state</b></p>
+  <li>kubectl get all -n argocd</li>
+  <li>kubectl port-forward svc/argocd-server -n argocd 8080:443</li>
+  <li><b>Launching Chrome and access http://localhost:8080</b></li>
+  <li><b>Login ID: admin, password: output of #5</b></li>
+  <li>kubectl get all -n argocd</li>
+  <p><b>Running Kubenetues project</b></p>
+  <li>kubectl apply -f application.yaml</li>
+  <p><b>Watch ArgoCD's application, wait until all containers are running without problem</b></p>
+  <li><b>To access Mongo Express http://localhost:8081</b></li>
+</ol>
+
+<h3> How to clean up all of containers</h3>
+<ol>
+     <p>kubectl delete all --all --namespace=argocd</p>
+</ol>
+
