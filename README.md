@@ -8,8 +8,7 @@
 <p>.</p>
 <h3>ArgoCD Application </h3>
 <p>Automates the deployment of the desired application states in the specified target environments</p>
-
-<p>.</p>
+<p>when a developer pushes application code to their git repository, the CI builds the code and a container image is built and registered to the container registry. Then, they push the manifests and Argo CD applies them to a Kubernetes cluster.</p>
 <img src="images/argocd-application.png"
      alt="Markdown Monster icon"
      style="float: left; margin-right: 10px;" />
