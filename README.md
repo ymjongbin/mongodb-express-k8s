@@ -11,7 +11,7 @@
 <p>when a developer pushes application code to their git repository, the CI builds the code and a container image is built and registered to the container registry. Then, they push the manifests and Argo CD applies them to a Kubernetes cluster.</p>
 <img src="images/argocd-application.png"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px; margin-top: 20px;" />
 
 | Requirements      | Description |
 | ---- | --- |
@@ -22,7 +22,7 @@
 <p>Web-based MongoDB admin interface, written with Node.js and express</p>
 <img src="images/mongoDB-express.png"
      alt="Markdown Monster icon"
-     style="float: left; margin-right: 10px;" />
+     style="float: left; margin-right: 10px; margin-top: 20px;" />
 <p>.</p>
 <h3>   </h3>
 <h3> How to run it in local </h3>
